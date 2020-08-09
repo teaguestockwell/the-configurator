@@ -64,7 +64,7 @@ public class compare2 {
                 vb.getChildren().add(new Text(scan.next()));
             }
             Button b = new Button(name);
-            b.setPrefWidth(Main.picSize);
+            b.setPrefWidth(Main.picSize); b.setPrefHeight(50);
             b.setOnAction(this::onMouseClick);
             vb.getChildren().add(b);
 

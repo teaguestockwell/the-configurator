@@ -75,6 +75,7 @@ public class configure2 {
             String price = configvalueXprice.get(value);
             Button b = new Button(value + "  +$" + price);
             b.setPrefWidth(Main.picSize);
+            b.setPrefHeight(50);
             b.setOnAction(this::onMouseClick);
             VBoxButtons.getChildren().add(b);
         }
@@ -83,6 +84,7 @@ public class configure2 {
         fill.setMinHeight(300);
         fill.setBackground(back);
         VBoxButtons.getChildren().add(fill);
+        VBoxButtons.setSpacing(20);
 
 
     }

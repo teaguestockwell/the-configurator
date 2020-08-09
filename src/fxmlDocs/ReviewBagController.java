@@ -54,7 +54,7 @@ public class ReviewBagController {
             Text price = new Text (comp.getPrice());
             VBox v = new VBox(name,price,t);
             v.setAlignment(Pos.CENTER_LEFT);
-            v.setSpacing(5);
+            v.setSpacing(10);
             v.setBackground(back);
 
             HBox h = new HBox(iw,v);
