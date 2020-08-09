@@ -4,7 +4,6 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.ScrollPane;
 import javafx.stage.Stage;
 
 import java.util.Arrays;
@@ -13,6 +12,8 @@ public class Main extends Application {
 
     public static final double picSize = 300.0;
     static Stage window;
+
+    //Teague Stockwell 20200809 The Configurator
 
     @Override
     public void start(Stage primaryStage) throws Exception {
