@@ -7,7 +7,7 @@ import java.sql.*;
 import java.util.*;
 
 public class SQLRW {
-    final static String DB_URL = "jdbc:h2:/"+System.getProperty("user.dir")+"/resources;";
+    final static String DB_URL = "jdbc:h2:/" + System.getProperty("user.dir") + "/resources;";
     final static String DB_PASSWORD = "";
     final static String DB_USER = "sa";
     final static String DB_DRIVER = "org.h2.Driver";
@@ -278,7 +278,9 @@ public class SQLRW {
 
                     con.close();
                     return new Image("file:photo.jpg");
-                }catch (Exception e){return null;}
+                } catch (Exception e) {
+                    return null;
+                }
             }
             con.close();
         } catch (Exception e) {
